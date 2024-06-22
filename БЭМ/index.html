@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <!---Неправильный подход, с точки зрения принципа БЭМ, нет разделения на блок и элемент 
+    и неуказан модификатор
+    <ul class="catalog-repairs-list">
+        <li class="catalog-repairs-item"><a href="#">American classic</a></li>
+        <li class="catalog-repairs-item"><a href="#">Empire</a></li>
+        <li class="catalog-repairs-item"><a href="#">Classical</a></li>
+        <li class="catalog-repairs-item"><a href="#">Loft</a></li>
+        <li class="catalog-repairs-item"><a href="#">Minimalism</a></li>
+        <li class="catalog-repairs-item"><a href="#">Provence</a></li>
+        <li class="catalog-repairs-item"><a href="#">Romanticism</a></li>
+        <li class="catalog-repairs-item"><a href="#">Scandinavian style</a></li>
+        <li class="catalog-repairs-item"><a href="#">Mediterranean style</a></li>
+        <li class="catalog-repairs-item"><a href="#">High tech</a></li>
+        <li class="catalog-repairs-item"><a href="#">Eclecticism</a></li>
+    </ul>
+    -->
+    <!---Правильный подход, вводим помимо классов для элементов списков классы для ссылок 
+    (т.к. по БЭМ в css не используют селекторы тегов и идентификаторов,а стили блоков и элементов 
+    описываются только через классы) имя элемента отделено от имени блока 2 подчёркиваниями (__)
+    и указан модификатор, в данном случае это состояние acnive 1 элемента (ссылки), для него мы
+    вводим отдельный класс catalog-repairs-list__link--active-->
+    <ul class="catalog-repairs-list">
+        <li class="catalog-repairs-list__item"><a class="catalog-repairs-list__link--active" href="#">American classic</a></li>
+        <li class="catalog-repairs-list__item"><a class="catalog-repairs-list__link" href="#">Empire</a></li>
+        <li class="catalog-repairs-list__item"><a class="catalog-repairs-list__link" href="#">Classical</a></li>
+        <li class="catalog-repairs-list__item"><a class="catalog-repairs-list__link" href="#">Loft</a></li>
+        <li class="catalog-repairs-list__item"><a class="catalog-repairs-list__link" href="#">Minimalism</a></li>
+        <li class="catalog-repairs-list__item"><a class="catalog-repairs-list__link" href="#">Provence</a></li>
+        <li class="catalog-repairs-list__item"><a class="catalog-repairs-list__link" href="#">Romanticism</a></li>
+        <li class="catalog-repairs-list__item"><a class="catalog-repairs-list__link" href="#">Scandinavian style</a></li>
+        <li class="catalog-repairs-list__item"><a class="catalog-repairs-list__link" href="#">Mediterranean style</a></li>
+        <li class="catalog-repairs-list__item"><a class="catalog-repairs-list__link" href="#">High tech</a></li>
+        <li class="catalog-repairs-list__item"><a class="catalog-repairs-list__link" href="#">Eclecticism</a></li>
+    </ul>
+</body>
+</html>

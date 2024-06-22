@@ -1,0 +1,75 @@
+.header {
+    background-color: rgba(19, 19, 19, 1);
+}
+
+.container {
+    max-width: 1263px;
+    margin: 0 auto;
+}
+
+.container-header {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    padding-top: 14px; 
+    padding-bottom: 15px;
+}
+
+.menu-row {
+    display: flex; 
+    justify-content: center;
+    list-style-type: none; 
+ }
+ 
+ .header-menu__item {
+     margin-right: 47px;
+ } 
+
+.header-menu__item .header-menu__link,
+.header-menu__item .header-menu__link--active {
+    font-family: Arial;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: left;
+    text-decoration: none;
+    text-transform: uppercase; 
+}
+
+.header-menu__item .header-menu__link {
+    color: rgba(255, 255, 255, 1); 
+}
+ 
+ .header-menu__item .header-menu__link--active {
+     color:rgba(227, 184, 115, 1);
+ }
+
+.logo, 
+.telephon {
+   font-family: Arial; 
+   font-size: 11px;
+   line-height: 15px;
+   text-align: left;
+   color: rgba(227, 184, 115, 1);
+   text-transform: uppercase;
+}
+
+.button {
+    font-family: Arial;
+    color: rgba(255, 255, 255, 1);
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 2px;  
+    background-color: rgba(227, 184, 115, 1);
+    box-shadow: 0px 5px 15px 0px rgba(227, 184, 115, 0.2);
+    outline: 0;
+    border: 0;  
+}
+
+.request-call {
+    font-weight: 400;  
+    padding: 13px 33px;
+    font-size: 11px;
+    font-style: italic;
+    line-height: 15px;
+}
+

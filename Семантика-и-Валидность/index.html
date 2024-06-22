@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <!--- Пример семантики на очень простом примере, верстки Header одного из сайтов.
+    Ниже в закомментированном виде приведён пример неправильной вёрстке по семантике
+    <div class="header">
+        <div class="container container-header">
+               <div class="logo">
+                   IC "Repair Design Project"  
+               </div>
+           <div>
+               <ul class="menu-row header-menu">
+                       <li class="header-menu__item"><a class="header-menu__link--active" href="#">Home</a></li>
+                       <li class="header-menu__item"><a class="header-menu__link" href="#">Projects</a></li>
+                       <li class="header-menu__item"><a class="header-menu__link" href="#">Measurement</a></li>
+                       <li class="header-menu__item"><a class="header-menu__link" href="#">Team</a></li>
+                       <li class="header-menu__item"><a class="header-menu__link" href="#">Reviews</a></li>
+                       <li class="header-menu__item"><a class="header-menu__link" href="#">Contacts</a></li>
+               </ul>
+            </div>
+           <div class="telephon">
+               +7 (928) 768-32-39
+           </div>
+           <button class="button request-call">Request a call</button>
+     </div>
+    </div>
+    <div class="main">
+        <div class="section">
+
+        </div>
+    </div>
+    <div class="footer">
+
+    </div>
+    В данном примере нет чёткого описания элемента тэга (не были использованы семантические теги,
+    такие как: <nav>, <header>, <footer> и т.д., которые отображают чёткую структуру свёрстанного сайта.)-->
+        <!---Правильна вёрстка по семантики будет выглядеть так:-->
+        <!--Валидность проверялась в онлайн сервисе W3C, кроме ряда предупреждений
+        (в разделе <main> отсутствует заголовок, ошибок выявленно не было)-->
+        <header class="header"> <!--Чётко указанно, где заголовок сайта-->
+            <div class="container container-header">
+                   <div class="logo">
+                       IC "Repair Design Project"  
+                   </div>
+               <nav><!--Чётко указанно, где в заголовоке сайта меню (навигация по сайту)-->
+                   <ul class="menu-row header-menu">
+                       <li class="header-menu__item"><a class="header-menu__link--active" href="#">Home</a></li>
+                       <li class="header-menu__item"><a class="header-menu__link" href="#">Projects</a></li>
+                       <li class="header-menu__item"><a class="header-menu__link" href="#">Measurement</a></li>
+                       <li class="header-menu__item"><a class="header-menu__link" href="#">Team</a></li>
+                       <li class="header-menu__item"><a class="header-menu__link" href="#">Reviews</a></li>
+                       <li class="header-menu__item"><a class="header-menu__link" href="#">Contacts</a></li>
+                   </ul>
+               </nav>
+               <div class="telephon">
+                   +7 (928) 768-32-39
+               </div>
+               <button class="button request-call">Request a call</button>
+         </div>
+       </header>
+       <main><!--Чётко указанно, где основная часть сайта-->
+            <section><!--Чётко указан, раздел посвящённый тому-то основной части сайта-->
+                
+            </section>
+       </main> 
+       <footer><!--Чётко указан, где подвал сайта-->
+
+       </footer> 
+</body>
+</html>
